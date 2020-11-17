@@ -8,7 +8,7 @@ fs.readFile('test-file.txt', () => { // <-- Event Loop
     console.log('I/O finished'); // <-- Top-lvl code
     console.log('------------------------------');
 
-    setTimeout(() => console.log('Timer 1 finished'), 0); // <-- PHASE 1 (paused)
+    setTimeout(() => console.log('Timer 1 finished'), 0); // <-- PHASE 1 (paused) Then checking all 
     setTimeout(() => console.log('Timer 2 finished'), 3000);
     setImmediate(() => console.log('Immediate 2 finished')); // <-- PHASE 3
 

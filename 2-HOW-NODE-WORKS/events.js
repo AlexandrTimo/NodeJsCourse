@@ -34,7 +34,7 @@ myEmitter.emit('newSale', 8); //  <-- Calling 'Event Emitter' with name 'newSale
 const server = http.createServer(); 
 
 server.on('request', (req, res) => {    // <-- Create new listener
-    console.log(req.url)
+    console.log(req.url);
     console.log('Request recieved!');   // <-- Attached 'Call back Function'
     //res.end('Requset recieved!');
 });
